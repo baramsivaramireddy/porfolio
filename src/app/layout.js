@@ -1,3 +1,4 @@
+
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -9,10 +10,15 @@ export const metadata = {
 };
 import { Providers } from "@/app/provider";
 import Homepagelayout from "@/components/homepagelayout";
+
+
 export default function RootLayout({ children }) {
+
+
+
   return (
-    <html lang="en" className="dark">
-      <body className={inter.className}>
+    <html lang="en" >
+      <body className={`${inter.className} w-vw`}  >
         <Providers>
           <Homepagelayout>{children}</Homepagelayout>
         </Providers>

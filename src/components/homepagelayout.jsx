@@ -11,6 +11,7 @@ import {
   Link
 } from "@nextui-org/react";
 import { useState } from "react";
+import ThemeSwitcher from "@/components/ui/Themeswitcher";
 export default function Homepagelayout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState();
   return (
@@ -20,6 +21,7 @@ export default function Homepagelayout({ children }) {
           isBordered
           isMenuOpen={isMenuOpen}
           onMenuOpenChange={setIsMenuOpen}
+          className="w-full"
         >
           <NavbarContent>
             <NavbarMenuToggle
@@ -44,7 +46,14 @@ export default function Homepagelayout({ children }) {
               </NavbarItem>
             </NavbarContent>
 
+
+              <NavbarItem>
+              <ThemeSwitcher/>
+              </NavbarItem>
+              
+          
             <NavbarItem>
+        
               <Button
                 className="capitalize"
                 href="https://www.linkedin.com/in/siva-baram-1269261aa/"
