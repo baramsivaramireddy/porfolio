@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siva Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <style>
+        @keyframes appear {
+            from {
+                opacity: 0;
+                margin-left: -100%;
+                display: none;
+            }
+
+            to {
+                opacity: 1;
+                margin-left: 0;
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class=" h-screen ">
+
+        <header class="py-5 px-4 fixed top-0 w-full bg-white ">
+            <nav id="nav">
+
+                <div class="flex justify-end">
+                    <button class="md:hidden flex " onclick="HandleMenuClick()" id="menuButton">&#9776;</button>
+                </div>
+                <ul id="Navlinks" class="md:flex hidden text-center   md:gap-5 text-xl font-bold md:justify-end">
+                    <li> <a href="/yetToBuild.html"> Projects</a> </li>
+                    <li> <a href="/yetToBuild.html"> Blogs</a> </li>
+                    <li> <a href="/yetToBuild.html"> Contact</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class=" flex flex-col flex-col-reverse md:grid md:grid-cols-3 h-[100%]   m-12 ">
+            <!-- body  -->
+
+            <div class="col-span-2 flex flex-col justify-center p-10 h-full leading-loose   ">
+                <!-- title , sub text ,  download resume -->
+
+                <!-- whishing and sub title -->
+                <h2 class="md:text-6xl text-xl font-black" id="whishing"> </h2>
+                <p class="md:text-6xl text-md font-semibold" id="jobTitle"> </p>
+                <p class="my-3  text-xs md:text-lg" id="about"> I like to build software . I know React, Express ,
+                    MongoDB , AWS . </p>
+                <button class=" mt-5 bg-red-500 text-white px-5 py-1 rounded font-bold w-64 hover:bg-red-700"> <a
+                        href="/yetToBuild.html"> Download Resume</a> </button>
+
+            </div>
+            <div class="flex justify-center items-center h-full">
+                <!-- image -->
+                <img alt="siva image " src="./shiva.jpg" class="rounded-full shadow" width="300px" height="500px" />
+            </div>
+        </section>
+
+        <section class="bg-sky-200  p-5">
+            <!--  recent blogs -->
+            <div class=" my-5">
+
+                <div class="flex justify-between">
+                    <p class="text-black text-xl font-semibold   "> Recent blog</p>
+                    <button> <a href="/yetToBuild.html" class="text-blue-500"> View all</a> </button>
+                </div>
+
+
+                <div class=" flex flex-col md:grid md:grid-cols-2 gap-5   m-5 ">
+
+                    <!-- last two blogs -->
+                    <div class="bg-white rounded p-5 gap-4">
+                        <!--  blog card -->
+
+                        <p class="text-3xl font-bold"> How i make these site </p>
+                        <p class="flex  gap-5 my-2">
+
+                            <span class="text-sm "> 12 feb , 2023</span>
+                            <span class="bg-black w-[2px] rounded-full h-5"> </span>
+                            <span class="text-sm "> design , pattern</span>
+                        </p>
+                        <p> I made these site with next and lexical </p>
+                    </div>
+                    <div class="bg-white rounded p-5 gap-4">
+                        <!--  blog card -->
+
+                        <p class="text-3xl font-bold"> How i make these site </p>
+                        <p class="flex  gap-5 my-2">
+
+                            <span class="text-sm"> 12 feb , 2023</span>
+                            <span class="bg-black w-[2px] rounded-full h-5"> </span>
+                            <span class="text-sm"> design , pattern</span>
+                        </p>
+                        <p> I made these site with next and lexical dsfksjdlkf
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="">
+            <!-- recent projects -->
+
+            <div class=" p-5 my-5">
+                <div class="flex justify-between">
+                    <p class="text-black text-xl font-semibold   "> Projects</p>
+                    <button> <a href="/yetToBuild.html" class="text-blue-500"> View all</a> </button>
+                </div>
+            </div>
+
+            <div>
+
+                <!-- projects -->
+
+
+                <div class="flex  m-5 p-5 border-b-2 ">
+                    <!-- project card -->
+
+                    <div>
+                        <img src="./dashboard.png" class="rounded  w-500 h-500" />
+                        <!-- image -->
+                    </div>
+                    <div class="ml-10 flex flex-col gap-5">
+
+
+                        <h2 class="text-2xl font-bold"> Designing Dashboard</h2>
+
+                        <div class="  flex gap-3 items-center">
+
+                            <span class="bg-gray-500 py-1 px-2 rounded-full text-white"> 2020</span>
+                            <span class="text-gray-500"> Dashboard</span>
+                        </div>
+
+                        <div>
+                            An Dashboard for taking the consultation for client . I built it with next js and
+                            tailwindcss . Deployed it on the vercel
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex  m-5 p-5 border-b-2 ">
+                    <!-- project card -->
+
+                    <div>
+                        <img src="./dashboard.png" class="rounded  w-500 h-500" />
+                        <!-- image -->
+                    </div>
+                    <div class="ml-10 flex flex-col gap-5">
+
+
+                        <h2 class="text-2xl font-bold"> Designing Dashboard</h2>
+
+                        <div class="  flex gap-3 items-center">
+
+                            <span class="bg-gray-500 py-1 px-2 rounded-full text-white"> 2020</span>
+                            <span class="text-gray-500"> Dashboard</span>
+                        </div>
+
+                        <div>
+                            An Dashboard for taking the consultation for client . I built it with next js and
+                            tailwindcss . Deployed it on the vercel
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+        <footer class="flex  flex-col  gap-1justify-center p-5 items-center">
+
+
+            <div>
+
+                <a href="/yetToBuild.html" class="fa fa-linkedin"></a>
+                <a href="/yetToBuild.html" class="fa fa-pinterest"></a>
+                <a href="/yetToBuild.html" class="fa fa-reddit"></a>
+            </div>
+            <p class="text-xl font-semibold"> Contack Me</p>
+        </footer>
+    </main>
+
+
+</body>
+
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+        let whishingDiv = document.getElementById('whishing');
+        let jobTitleDiv = document.getElementById('jobTitle');
+        let AboutDiv = document.getElementById('about');
+        let whishingwords = ['Hi,', ' ', 'I', ' ', 'am', ' ', 'Shiva'];
+        let JobTitleWords = ['A', " ", 'Software ', 'Engineer']
+        let delay = 0;
+        whishingwords.forEach((c) => {
+            let spanChild = document.createElement('span');
+            spanChild.textContent = c;
+            spanChild.style.cssText = `opacity:0;  white-space:pre; animation: appear 1s ${delay}s forwards;`;
+            whishingDiv.appendChild(spanChild);
+            delay += 0.5;
+        });
+
+        JobTitleWords.forEach((c) => {
+            let spanChild = document.createElement('span');
+            spanChild.textContent = c;
+            spanChild.style.cssText = `opacity:0;  white-space:pre; animation: appear 1s ${delay}s forwards;`;
+            jobTitleDiv.appendChild(spanChild);
+            delay += 0.9;
+        });
+
+
+
+    });
+
+    function HandleMenuClick() {
+
+        const menuButtonElement = document.getElementById('menuButton');
+        const NavLinksElement = document.getElementById('Navlinks');
+
+        NavLinksElement.classList.toggle('hidden')
+
+
+    }
+</script>
+
+</html>
